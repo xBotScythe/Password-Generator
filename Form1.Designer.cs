@@ -183,6 +183,7 @@
             this.Controls.Add(this.outputBox);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
+            this.Text = "the best password manager";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
