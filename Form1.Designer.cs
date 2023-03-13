@@ -87,6 +87,7 @@
             this.hasSymbols.TabIndex = 5;
             this.hasSymbols.Text = "Symbols";
             this.hasSymbols.UseVisualStyleBackColor = true;
+            this.hasSymbols.CheckedChanged += new System.EventHandler(this.hasSymbols_CheckedChanged);
             // 
             // hasNums
             // 
@@ -97,6 +98,7 @@
             this.hasNums.TabIndex = 4;
             this.hasNums.Text = "Numbers";
             this.hasNums.UseVisualStyleBackColor = true;
+            this.hasNums.CheckedChanged += new System.EventHandler(this.hasNums_CheckedChanged);
             // 
             // isUppercase
             // 
@@ -168,6 +170,7 @@
             this.btnExport.TabIndex = 5;
             this.btnExport.Text = "Export";
             this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // Form1
             // 
