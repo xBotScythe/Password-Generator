@@ -10,7 +10,6 @@ namespace Password_Generator
         }
 
         // variable declarations
-        MessageBoxManager mb = new MessageBoxManager();
         Random random = new Random();
         int passwordLength = 0;
         int amountGenerate = 0;
@@ -159,18 +158,13 @@ namespace Password_Generator
         }
         public bool warningMsg()
         {
-            MessageBoxManager.Yes = "Overwrite";
-            MessageBoxManager.No = "Append";
-            MessageBoxManager.Register();
             DialogResult d = MessageBox.Show("Would you like to overwrite the previous stored data?", "Saving...", MessageBoxButtons.YesNo);
             if (d == DialogResult.Yes)
             {
-                MessageBoxManager.Unregister();
                 return true;
             }
             else
             {
-                MessageBoxManager.Unregister();
                 return false;
             }
         }
